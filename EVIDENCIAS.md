@@ -2,7 +2,7 @@
 
 Imagens coletadas em **20/10/2026**. Os nomes seguem a ordem de execução e devem ser enviados **sem renomear** para a pasta `evidencias/`.
 
-> **Imagens pendentes de inclusão no GitHub.** Todos os caminhos abaixo já estão preparados; os previews aparecerão automaticamente após o upload dos arquivos PNG.
+
 
 | Nº | Arquivo | Comprovação |
 |---:|---|---|
