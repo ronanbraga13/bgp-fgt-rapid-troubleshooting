@@ -1,6 +1,5 @@
 # Evidências — Caso 01: Bad Peer AS
 
-Imagens coletadas em **20/10/2026**. Os nomes seguem a ordem de execução e devem ser enviados **sem renomear** para a pasta `evidencias/`.
 
 
 
