@@ -1,22 +1,5 @@
 # Evidências — Caso 01: Bad Peer AS
 
-
-
-
-| Nº | Arquivo | Comprovação |
-|---:|---|---|
-| 01 | `01-baseline-matriz-bgp-summary-config.png` | Sessões estabelecidas e configuração BGP na Matriz |
-| 02 | `02-baseline-rj-bgp-summary-config.png` | Sessões estabelecidas e configuração BGP no RJ |
-| 03 | `03-baseline-rj-rotas-bgp.png` | Rotas instaladas na tabela BGP do RJ |
-| 04 | `04-baseline-matriz-rotas-bgp.png` | Rotas instaladas na tabela BGP da Matriz |
-| 05 | `05-falha-bgp-idle-matriz.png` | Peer de teste em Idle na Matriz |
-| 06 | `06-falha-bgp-idle-rj.png` | Peer correspondente em Idle no RJ |
-| 07 | `07-diagnostico-neighbor-bad-peer-as.png` | Last Reset e Bad Peer AS no detalhe do neighbor |
-| **08** | **`08-debug-bgp-bad-peer-as-destacado.png`** | **Debug com as duas mensagens de erro destacadas** |
-| 09 | `09-correcao-remote-as-matriz.png` | AS remoto restaurado |
-| 10 | `10-validacao-sessoes-bgp-established.png` | Ambos os peers recuperados com três prefixos |
-| 11 | `11-validacao-prefixos-neighbor-2-2-2-1.png` | Prefixos recebidos pelo peer restaurado |
-
 ## Galeria cronológica
 
 ### 01 — Baseline Matriz
