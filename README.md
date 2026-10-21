@@ -19,7 +19,22 @@ Guia **operacional e direto** para investigar falhas de BGP (**Border Gateway Pr
 | Caso | Sintoma | Causa | Situação |
 |---|---|---|---|
 | [01 — Neighbor Idle: Bad Peer AS](CENARIOS/01-bgp-bad-peer-as.md) | Vizinhança não estabelece | `remote-as` incorreto | **Concluído** — evidências coletadas |
-| 02 — Neighbor não estabelece (IP incorreto) | Próxima simulação | A validar | Planejado |
+| [02 — Neighbor Idle: IP incorreto](CENARIOS/02-bgp-neighbor-ip-incorreto.md) | Neighbor configurado com IP divergente do endpoint IPsec | `No such Peer configured` | **Concluído** — aguardando upload das imagens |
+
+## Caso 02 em 30 segundos
+
+**Sintoma:** Matriz com `2.2.2.99` em `Idle`, enquanto a VPN `CLARO_TO_RJ` permanecia ativa.
+
+**Evidência:** `show system interface CLARO_TO_RJ` mostrava `set remote-ip 2.2.2.1`. O sniffer registrou TCP/179 vindo de `2.2.2.1` e encerrado com RST; o debug confirmou:
+
+```text
+BGP: [NETWORK] Accept Thread: 2.2.2.1 - No such Peer configured
+```
+
+**Correção:** restaurar o IP do neighbor para `2.2.2.1` e manter o AS remoto `65000`. **Resultado:** sessão estabelecida e **3 prefixos recebidos**.
+
+➡️ [Ver investigação completa do Caso 02](CENARIOS/02-bgp-neighbor-ip-incorreto.md)  
+📸 [Ver evidências dos cenários](EVIDENCIAS.md)
 
 ## Caso 01 em 30 segundos
 
